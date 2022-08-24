@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    margin: 0 64px;
+}
+.header_left-side, 
+.main-navigation,
+.header_right-side,
+.header_helpers{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    fill: #1F2020;
+}
+.logo:hover{
+    fill: rgb(58, 121, 66);
+    transition: 0.5s;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+.main-navigation li{
+    text-transform: uppercase;
+    margin-right: 24px;
+    font-size: 14px;
+    color: #1F2020;
+}
+.main-navigation li:hover{
+    text-decoration: underline;
+}
+.header_call{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.header_call span{
+    color: rgb(160, 159, 159);
+}
+.header_helpers li{
+    margin-right: 24px;
+    cursor: pointer;
+}
+.profile-icon:hover{
+    fill: blue;
+}
+.heart-icon:hover{
+fill: red;
+}
+.search-icon:hover{
+    fill: rgb(190, 187, 187);
+}
+.basket-icon{
+    background-color: #7BB899;
+    width: 24px;
+    height: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+}
