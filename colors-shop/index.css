@@ -1,11 +1,24 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-Regular.ttf);
+    font-weight: 400;
+}
 body{
     display: flex;
     flex-direction: column;
     font-size: 14px;
+    margin: 0;
+    font-family: 'Inter';
 }
 a{
     text-decoration: none;
     color: black;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin: 0;
 }
 header{
     display: flex;
@@ -47,17 +60,17 @@ li{
     justify-content: flex-start;
 }
 .header_call span{
-    color: rgb(160, 159, 159);
+    color: rgba(160, 159, 159, 0.701);
 }
 .header_helpers li{
     margin-right: 24px;
     cursor: pointer;
 }
 .profile-icon:hover{
-    fill: blue;
+    fill: rgba(0, 0, 255, 0.344);
 }
 .heart-icon:hover{
-fill: red;
+fill: rgba(255, 0, 0, 0.298);
 }
 .search-icon:hover{
     fill: rgb(190, 187, 187);
@@ -70,4 +83,64 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
+}
+
+.option-slider{
+    position: relative;
+    color: white;
+}
+.option-slider_colors{
+    background-image: url(./assets/images/png/background-image.png);
+    background-size: cover;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.option-slider_pointer{
+    font-size: 10px;
+    position: absolute;
+    top: 32px;
+    left: 64px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #C4C4C4;
+    text-transform: uppercase;
+}
+.ellipce{
+    background-color: #C4C4C4;
+    width: 3px;
+height: 3px;
+border-radius: 50%;
+}
+h1{
+    font-size: 72px;
+    margin-bottom: 24px;
+}
+.option-slider_colors p{
+    font-size: 16px;
+}
+footer{
+    background-color: black;
+    height: 200px;
+}
+.catalog{
+    margin: 0 64px;
+}
+.change-slide{
+    position: absolute;
+    bottom: 150px;
+    right: 350px;
+}
+.slider-inputs{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 124px;
+    height: 32px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+
 }
