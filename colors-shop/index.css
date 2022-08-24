@@ -127,7 +127,8 @@ footer{
     height: 200px;
 }
 .catalog{
-    margin: 0 64px;
+    margin: 100px 64px;
+    
 }
 .change-slide{
     position: absolute;
@@ -144,3 +145,50 @@ footer{
     left: 45%;
 
 }
+
+.catalog-container{
+    text-transform: uppercase;
+    display: flex;
+gap: 12px;
+align-items: center;
+margin-bottom: 10px;
+}
+  .toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+    margin: 0;
+    vertical-align: top;
+    background: #F2F2F2;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  
+   }
+
+   .toggle-button::after {
+    content: "";
+  
+    display: inline-block;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+  
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    transform: translateX(0);
+  }
+  .toggle-button:checked::after {
+    transform: translateX(calc(100% + 5px));
+  }
+  .toggle-button:checked {
+    background-color: #7BB899;
+  }
