@@ -20,6 +20,10 @@ p{
 h1{
     margin: 0;
 }
+ul,li{
+    margin: 0;
+    padding: 0;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -128,6 +132,8 @@ footer{
 }
 .catalog{
     margin: 100px 64px;
+    display: flex;
+    /* gap: 130px; */
     
 }
 .change-slide{
@@ -191,4 +197,63 @@ margin-bottom: 10px;
   }
   .toggle-button:checked {
     background-color: #7BB899;
+  }
+  .heading{
+      display: flex;
+      justify-content: space-between;
+    
+  }
+  .catalog-cards{
+      width: 70%;
+  }
+  aside{
+      width: 30%;
+  }
+  select{
+      border: none;
+      list-style: none;
+  }
+  
+.custom{
+text-transform: uppercase;
+position: relative;
+}
+  .custom-button{
+    text-transform: uppercase;
+border: none;
+background-color: white;
+cursor: pointer;
+  }
+  .custom-list{
+    display: none;
+      position: absolute;
+      z-index: 110;
+      top: 0;
+      right: 0;
+      background-color: white;
+width: 280px;
+  }
+  .custom-list li{
+     
+      height: 48px;
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+      font-size: 12px;
+    
+  }
+  .custom-active{
+    background-color: #7BB899;
+      }
+  .custom-list li:hover{
+    background-color: #7bb89a81;
+  }
+
+  .overflow{
+      display: none;
+      position: fixed;
+    width: 100vw;
+    height: 100vh;
+      background-color: #1f2020b3;
+      z-index: 100;
   }
