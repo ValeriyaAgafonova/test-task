@@ -1,13 +1,20 @@
 <template>
-    <header class="store-catalog">
-<p>{{title}}</p>
-    </header>
+    <div class="store-catalog">
+<store-catalog-item
+v-for="item in data"
+:key="item.id"
+:item_data="item" />
+    </div>
 </template>
 
 <script>
+
+import StoreCatalogItem from './store-catalog-item.vue';
     export default{
         name: 'store-catalog',
-        components: {},
+        components: {
+    StoreCatalogItem
+},
         props: {},
         data(){
             return{
