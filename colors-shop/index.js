@@ -1,8 +1,8 @@
-const selectButton = document.querySelector(".custom-button");
+const selectButton = document.querySelector(".custom-filter_button");
 const overflow = document.querySelector(".overflow");
-const optionList = document.querySelector(".custom-list");
+const optionList = document.querySelector(".custom-filter_list");
 const body = document.querySelector("body");
-const options = Array.from(document.querySelectorAll(".custom-item"));
+const options = Array.from(document.querySelectorAll(".custom-filter_item"));
 const basket = document.querySelector(".basket-container");
 const basketButton = document.querySelector(".basket-icon");
 const closeBasket = document.querySelector(".close-button");
@@ -29,7 +29,6 @@ function getData() {
   getItemsRequest()
     .then((res) => {
       if (res) {
-        console.log(res);
         data = res;
         addCards(data);
       }
@@ -40,10 +39,9 @@ function getData() {
 }
 getData();
 
-const cardsContainer = document.querySelector(".cards");
+const cardsContainer = document.querySelector(".catalog__cards");
 
 function getEnding(length) {
-  console.log("get");
   if (length % 10 === 1) {
     return "товар";
   } else if (length % 10 < 5 && length % 10 > 1) {
@@ -57,7 +55,7 @@ function addCards(data) {
   cardsContainer.innerHTML = "";
   let ending = getEnding(data.length);
   document.querySelector(
-    ".catalog-number"
+    ".catalog__items-number"
   ).innerHTML = `${data.length} ${ending}`;
 
   for (let i = 0; i < data.length; i++) {
@@ -240,7 +238,7 @@ function countItemsNumber(totalCounter) {
 }
 
 //Фильтрация товаров
-const filters = document.querySelectorAll("#toggle-button");
+const filters = document.querySelectorAll(".toggle-button");
 
 let filtersArray = [];
 function getFilteredData(e) {
@@ -288,7 +286,7 @@ var swiper = new Swiper(".mySwiper", {
 // Cортировка карточек
 
 function sortItems(value) {
-  const list = document.querySelector(".cards");
+  const list = document.querySelector(".catalog__cards");
   const listElements = [...list.children];
   if (value === "expensive") {
     const sortedListElements = listElements.sort(
@@ -337,8 +335,6 @@ function changeItemInBasket(e) {
 
 function deleteItem(target) {
   document.querySelector(".basket-items").removeChild(target.parentNode);
-  console.log(target.parentNode.id);
-  console.log(target.previousElementSibling.children[1].textContent);
   minusTotalCounter(
     Number(target.previousElementSibling.children[1].textContent)
   );
@@ -364,7 +360,6 @@ function changeAmountBasketItem(target) {
       target.nextElementSibling.textContent = 0;
     }
   } else {
-    console.log(target.parentNode.parentNode.id);
     target.previousElementSibling.textContent =
       Number(target.previousElementSibling.textContent) + 1;
     plusTotalCounter(1);
@@ -378,15 +373,15 @@ function changeAmountBasketItem(target) {
 
 // Мобильная версия - блок с фильтрами
 
-document.querySelector(".filter-button").addEventListener("click", openFilters);
+document.querySelector(".catalog__filter-button").addEventListener("click", openFilters);
 
 function openFilters() {
   overflow.style.display = "block";
-  document.querySelector("aside").classList.add("open-filter");
+  document.querySelector("catalog__aside").classList.add("open-filter");
 
   body.style.overflow = "hidden";
 }
-document.querySelector(".button-slice").addEventListener("click", closeFilters);
+document.querySelector(".aside__button-slice").addEventListener("click", closeFilters);
 
 function closeFilters() {
   overflow.style.display = "none";
