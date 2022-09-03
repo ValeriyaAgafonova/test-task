@@ -36,13 +36,13 @@
         <button class="order-button" disabled>Оформить заказ</button>
       </div>
     </div>
-    <header id="header">
-      <div class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+    <header class="header">
+      <div class="header__burger-icon">
+        <span class="burger-icon__line"></span>
+        <span class="burger-icon__line"></span>
+        <span class="burger-icon__line"></span>
       </div>
-      <div class="header_left-side">
+      <div class="header__left-side">
         <svg
           class="logo"
           width="131"
@@ -58,22 +58,22 @@
         </svg>
 
         <nav>
-          <ul class="main-navigation">
-            <li><a href="#">продукты</a></li>
-            <li><a href="#">цвета</a></li>
-            <li><a href="#">вдохновение</a></li>
-            <li><a href="#">советы</a></li>
-            <li><a href="#">найти магазин</a></li>
+          <ul class="header__main-navigation">
+            <li class="main-navigation__item">продукты</li>
+            <li class="main-navigation__item">цвета</li>
+            <li class="main-navigation__item">вдохновение</li>
+            <li class="main-navigation__item">советы</li>
+            <li class="main-navigation__item">найти магазин</li>
           </ul>
         </nav>
       </div>
-      <div class="header_right-side">
-        <div class="header_call">
-          <a href="tel:+74952217769">+7 (495) 221-77-69</a>
-          <span>Заказать звонок</span>
+      <div class="header__right-side">
+        <div class="header__phone-wrapper">
+          <a class="header__telephone-number" href="tel:+74952217769">+7 (495) 221-77-69</a>
+          <span class="header__order-text">Заказать звонок</span>
         </div>
-        <ul class="header_helpers">
-          <li>
+        <ul class="header__helpers">
+          <li class="header__helpers_item">
             <a
               ><svg
                 class="search-icon"
@@ -100,7 +100,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="header__helpers_item">
             <a
               ><svg
                 class="profile-icon"
@@ -134,7 +134,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="header__helpers_item">
             <a
               ><svg
                 class="heart-icon"
@@ -152,49 +152,49 @@
               </svg>
             </a>
           </li>
-          <li><div class="basket-icon">0</div></li>
+          <li class="header__helpers_item"><div class="basket-icon">0</div></li>
         </ul>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="swiper-container">
         <div class="swiper mySwiper">
-          <div class="option-slider_pointer">
+          <div class="swiper__pointer">
             <span>главная</span>
             <div class="ellipce"></div>
             <span>продукты</span>
             <div class="ellipce"></div>
             <span>краски</span>
           </div>
-          <h2 class="mobile-heading">Краски</h2>
+          <h2 class="swiper-container__mobile-heading">Краски</h2>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <h1>Краски</h1>
+              <h1 class="swiper-slide__heading">Краски</h1>
               <p>Идеально подходят для стен и других поверхностей.</p>
               <p>Найди свой идеальный цвет!</p>
             </div>
             <div class="swiper-slide">
-              <h1>Краски</h1>
+              <h3 class="swiper-slide__heading">Краски</h3>
               <p>Идеально подходят для стен и других поверхностей.</p>
               <p>Найди свой идеальный цвет!</p>
             </div>
             <div class="swiper-slide">
-              <h1>Краски</h1>
+              <h3 class="swiper-slide__heading">Краски</h3>
               <p>Идеально подходят для стен и других поверхностей.</p>
               <p>Найди свой идеальный цвет!</p>
             </div>
             <div class="swiper-slide">
-              <h1>Краски</h1>
+              <h3 class="swiper-slide__heading">Краски</h3>
               <p>Идеально подходят для стен и других поверхностей.</p>
               <p>Найди свой идеальный цвет!</p>
             </div>
             <div class="swiper-slide">
-              <h1>Краски</h1>
+              <h3 class="swiper-slide__heading">Краски</h3>
               <p>Идеально подходят для стен и других поверхностей.</p>
               <p>Найди свой идеальный цвет!</p>
             </div>
             <div class="swiper-slide">
-              <h1>Краски</h1>
+              <h3 class="swiper-slide__heading">Краски</h3>
               <p>Идеально подходят для стен и других поверхностей.</p>
               <p>Найди свой идеальный цвет!</p>
             </div>
@@ -206,85 +206,85 @@
       </section>
 
       <section class="catalog">
-        <aside>
-          <button class="button-slice"></button>
-          <div class="filters">
-            <div class="catalog-container">
+        <aside class="catalog__aside">
+          <button class="aside__button-slice"></button>
+          <div class="aside__filters">
+            <div class="aside-filters__item">
               <input
                 type="checkbox"
-                id="toggle-button"
+                id="toggle-button-1"
                 class="toggle-button"
                 value="new"
               />
-              <label for="toggle-button" class="text">Новинки</label>
+              <label for="toggle-button-1" class="text">Новинки</label>
             </div>
-            <div class="catalog-container">
+            <div class="aside-filters__item">
               <input
                 type="checkbox"
-                id="toggle-button"
+                id="toggle-button-2"
                 class="toggle-button"
                 value="instock"
               />
-              <label for="toggle-button" class="text">Есть в наличии</label>
+              <label for="toggle-button-2" class="text">Есть в наличии</label>
             </div>
-            <div class="catalog-container">
+            <div class="aside-filters__item">
               <input
                 type="checkbox"
-                id="toggle-button"
+                id="toggle-button-3"
                 class="toggle-button"
                 value="contract"
               />
-              <label for="toggle-button" class="text">контрактные</label>
+              <label for="toggle-button-3" class="text">контрактные</label>
             </div>
-            <div class="catalog-container">
+            <div class="aside-filters__item">
               <input
                 type="checkbox"
-                id="toggle-button"
+                id="toggle-button-4"
                 class="toggle-button"
                 value="exclusive"
               />
-              <label for="toggle-button" class="text">Эксклюзивные</label>
+              <label for="toggle-button-4" class="text">Эксклюзивные</label>
             </div>
-            <div class="catalog-container">
+            <div class="aside-filters__item">
               <input
                 type="checkbox"
-                id="toggle-button"
+                id="toggle-button-5"
                 class="toggle-button"
                 value="sale"
               />
-              <label for="toggle-button" class="text">Распродажа</label>
+              <label for="toggle-button-5" class="text">Распродажа</label>
             </div>
           </div>
         </aside>
-        <div class="catalog-cards">
-          <div class="heading">
-            <p class="catalog-number">0</p>
-            <p class="filter-button">Фильтры</p>
-            <div class="custom">
-              <button class="custom-button" data-option="expensive">
+        <div class="catalog__main">
+          <div class="catalog__slice-wrapper">
+            <p class="catalog__items-number">0</p>
+            <p class="catalog__filter-button">Фильтры</p>
+            <div class="catalog__custom-filter">
+              <button class="custom-filter_button" data-option="expensive">
                 Сначала дорогие
               </button>
-              <ul class="custom-list">
-                <li class="custom-active custom-item" data-option="expensive">
+              <ul class="custom-filter_list">
+                <li class="custom-active custom-filter_item" data-option="expensive">
                   Сначала дорогие
                 </li>
-                <li class="custom-item" data-option="cheap">
+                <li class="custom-filter_item" data-option="cheap">
                   Сначала недорогие
                 </li>
-                <li class="custom-item" data-option="popular">
+                <li class="custom-filter_item" data-option="popular">
                   Сначала популярные
                 </li>
-                <li class="custom-item" data-option="new">сначала новые</li>
+                <li class="custom-filter_item" data-option="new">сначала новые</li>
               </ul>
             </div>
           </div>
-          <div class="cards"></div>
+          <div class="catalog__cards"></div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
-    <script src="./cards.js"></script>
   </body>
 </html>
+
