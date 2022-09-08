@@ -1,12 +1,12 @@
 <template>
-    <header class="store-sorting">
+    <header class="v-store-sorting">
 <p>{{title}}</p>
     </header>
 </template>
 
 <script>
     export default{
-        name: 'store-sorting',
+        name: 'v-store-sorting',
         components: {},
         props: {},
         data(){
@@ -23,7 +23,7 @@
 </script>
 
 <style>
-.store-sorting{
+.v-store-sorting{
     display: flex;
 
 }

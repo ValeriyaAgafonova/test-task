@@ -1,12 +1,12 @@
 <template>
-    <header class="store-basket">
+    <header class="v-store-basket">
 <p>{{title}}</p>
     </header>
 </template>
 
 <script>
     export default{
-        name: 'store-basket',
+        name: 'v-store-basket',
         components: {},
         props: {},
         data(){
@@ -23,7 +23,7 @@
 </script>
 
 <style>
-.store-basket{
+.v-store-basket{
 
 }
 </style>

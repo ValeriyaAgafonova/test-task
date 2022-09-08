@@ -1,12 +1,12 @@
 <template>
-    <header class="store-catalog-wrapper">
+    <header class="v-store-filters">
 <p>{{title}}</p>
     </header>
 </template>
 
 <script>
     export default{
-        name: 'store-catalog-wrapper',
+        name: 'v-store-filters',
         components: {},
         props: {},
         data(){
@@ -23,7 +23,7 @@
 </script>
 
 <style>
-.store-catalog-wrapper{
+.v-store-filters{
     display: flex;
 
 }

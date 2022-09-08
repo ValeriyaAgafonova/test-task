@@ -1,5 +1,5 @@
 <template>
-    <header class="store-header">
+    <header class="v-store-header">
         <div class="header_left-side">
         <svg
           class="logo"
@@ -118,7 +118,7 @@
 
 <script>
     export default{
-        name: 'store-header',
+        name: 'v-store-header',
         components: {},
         props: {},
         data(){
@@ -135,7 +135,7 @@
 </script>
 
 <style>
-.store-header{
+.v-store-header{
     display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,12 +1,12 @@
 <template>
-    <header class="store-slider">
+    <header class="v-store-catalog-wrapper">
 <p>{{title}}</p>
     </header>
 </template>
 
 <script>
     export default{
-        name: 'store-slider',
+        name: 'v-store-catalog-wrapper',
         components: {},
         props: {},
         data(){
@@ -23,7 +23,7 @@
 </script>
 
 <style>
-.store-slider{
+.v-store-catalog-wrapper{
     display: flex;
 
 }

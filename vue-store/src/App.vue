@@ -1,17 +1,19 @@
 <template>
   <div id="App">
     <store-header/>
+    <store-catalog/>
   </div>
 
 </template>
 
 <script>
-import storeHeader from './components/store-header.vue'
-
+import storeHeader from './components/v-store-header.vue'
+import storeCatalog from './components/v-store-catalog.vue'
 export default {
   name: 'App',
   components: {
    storeHeader,
+   storeCatalog
   }
 }
 </script>

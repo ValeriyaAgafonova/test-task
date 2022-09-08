@@ -1,7 +1,7 @@
 <template>
-    <div class="store-catalog-item">
+    <div class="v-store-catalog-item">
 <img :src="require(item_data.image)" alt="photo"/>
-<p class="store-catalog-item-name">{{item_data.name}}</p>
+<p class="v-store-catalog-item-name">{{item_data.name}}</p>
     <div class="last-line flex-container">
         <p>{{item_data.price}} ₽</p>
         <button class="add-item toggled-button">{{item.buttonState}}</button>
@@ -10,23 +10,22 @@
 </template>
 
 <script>
-import { objectExpression } from '@babel/types';
+import { anyTypeAnnotation } from '@babel/types';
+
 
     export default{
-        name: 'store-catalog-item',
+        name: 'v-store-catalog-item',
         components: {},
         props: {
             item_data: {
                 type: Object,
-                default(){
-                    return {}
-                }
+                default() {},
 
             }
         },
         data(){
             return{
-                buttonState: "+"
+                buttonState: "+",
             }
         },
         computed: {},
@@ -38,7 +37,7 @@ import { objectExpression } from '@babel/types';
 </script>
 
 <style>
-.store-catalog-item{
+.v-store-catalog-item{
 
 }
 </style>
